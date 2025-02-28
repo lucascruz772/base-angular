@@ -1,0 +1,49 @@
+// Custom Theming for Angular Material
+// For more information: hettps://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Inter,
+      density: 0,
+    )
+  );
+} /* You can add global styles to this file, and also impost other style files */
+
+:root {
+  --primary-color: mat.$azure-palette;
+  --secondary-color: mat.$blue-palette;
+  --tertiary-color: mat.$orange-palette;
+
+  --padding: 1rem;
+  --margin: 1rem;
+
+  --boder-radius: 0.8rem
+
+  --neutral-color-0: hsl(0, 0%, 100%);
+  --neutral-color-10: hsl(0, 0%, 90%);
+  --neutral-color-20: hsl(0, 0%, 80%);
+  --neutral-color-30: hsl(0, 0%, 70%);
+  --neutral-color-40: hsl(0, 0%, 60%);
+  --neutral-color-50: hsl(0, 0%, 50%);
+  --neutral-color-60: hsl(0, 0%, 40%);
+  --neutral-color-70: hsl(0, 0%, 30%);
+  --neutral-color-80: hsl(0, 0%, 20%);
+  --neutral-color-90: hsl(0, 0%, 10%);
+  --neutral-color-100: hsl(0, 0%, 0%);
+}
+
+html
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Inter, "Helvetica Nue", sans-serif;
+}
