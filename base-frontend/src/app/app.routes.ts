@@ -36,7 +36,7 @@ export const route: Routes = [
     },
     
         
-            ...publicRoutes,
-            ...privateRoutes,
+    ...publicRoutes,
+    ...privateRoutes,
 ];
 
